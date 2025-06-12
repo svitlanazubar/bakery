@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lily's Bakery - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/logo.jpg" alt="Lily's Bakery Logo" class="logo" />
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div id="navLinks" class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="menu.html">Menu</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+        </nav>          
+  </header>
+  <div class="container">
+  <main>
+    <h1>Welcome to Lily’s Bakery!</h1>
+    <p>Sweet moments every day 🍰</p>
+    <img src="images/banner.jpg" alt="Bakery Banner" class="banner" />
+    <p>
+      Discover our delicious homemade cupcakes made with love and fresh ingredients. Check out our <a href="menu.html">menu</a> or <a href="contact.html">contact us</a> for orders!
+    </p>
+  </main>
+  </div>
+  <footer>
+    <p>© 2025 Lily’s Bakery</p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      if (nav) {
+        nav.classList.toggle("active");
+      }
+    }
+  </script>  
+</body>
+</html>

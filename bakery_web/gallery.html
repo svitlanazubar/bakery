@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lily's Bakery - Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+      gap: 15px;
+      padding: 10px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/logo.jpg" alt="Lily's Bakery Logo" class="logo" />
+    <nav>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div id="navLinks" class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="menu.html">Menu</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </nav>          
+    </nav>
+  </header>
+
+  <div class="container">
+  <main>
+    <h1>Gallery</h1>
+    <div class="gallery-grid">
+      <img src="images/cupcake1.jpg" alt="Red Velvet Cupcake" />
+      <img src="images/cupcake2.jpg" alt="Hazelnut Dream Cupcake" />
+      <img src="images/cupcake3.jpg" alt="Chocolate Swirl Cupcake" />
+      <img src="images/cupcake4.jpg" alt="Mint Delight Cupcake" />
+      <img src="images/cupcake5.jpg" alt="Lemon Zest Cupcake" />
+      <img src="images/cupcake6.jpg" alt="Raspberry Cake Cupcake" />
+    </div>
+  </main>
+  </div>
+
+  <footer>
+    <p>© 2025 Lily’s Bakery</p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      if (nav) {
+        nav.classList.toggle("active");
+      }
+    }
+  </script>  
+</body>
+</html>

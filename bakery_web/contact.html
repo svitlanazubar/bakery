@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lily's Bakery - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+    button {
+      background-color: #A97155;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #7B533E;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/logo.jpg" alt="Lily's Bakery Logo" class="logo" />
+    <nav>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div id="navLinks" class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="menu.html">Menu</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </nav>          
+    </nav>
+  </header>
+
+  <div class="container">
+  <main>
+    <h1>Contact Us</h1>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </main>
+  </div>
+
+  <footer>
+    <p>© 2025 Lily’s Bakery</p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      if (nav) {
+        nav.classList.toggle("active");
+      }
+    }
+  </script>  
+</body>
+</html>
